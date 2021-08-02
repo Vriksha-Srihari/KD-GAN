@@ -61,6 +61,7 @@
     - `python fid_score.py --gpu 0 --batch-size 50 --path1 bird_val.npz --path2 ../../models/bird_KDGAN_hard`
     - `python fid_score.py --gpu 0 --batch-size 50 --path1 coco_val.npz --path2 ../../models/coco_KDGAN_hard`
 
-
+### Reference
+DM-GAN: Dynamic Memory Generative Adversarial Networks for Text-to-Image Synthesis [code](https://github.com/MinfengZhu/DM-GAN)
 ### License
 This code is released under the MIT License (refer to the LICENSE file for details). 
