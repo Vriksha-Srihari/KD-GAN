@@ -1,0 +1,33 @@
+KNOWLEDGE_BASE: '../data/coco/VisualKnowledgeBase_test.pickle'
+KNOWLEDGE_FEAT: 'path/to/image/features/resnet50/'
+
+CONFIG_NAME: 'KD_hard'
+
+DATASET_NAME: 'coco'
+DATA_DIR: '../data/coco'
+GPU_ID: 3
+WORKERS: 0
+
+B_VALIDATION: True
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '../models/coco_KD-GAN_hard.pth'
+    B_NET_D: False
+    BATCH_SIZE: 10
+    NET_E: '../DAMSMencoders/coco/text_encoder_glove.pth'
+
+
+GAN:
+    DF_DIM: 32
+    GF_DIM: 64
+    Z_DIM: 100
+    R_NUM: 3
+
+TEXT:
+    EMBEDDING_DIM: 300
+    CAPTIONS_PER_IMAGE: 5
+    WORDS_NUM: 20

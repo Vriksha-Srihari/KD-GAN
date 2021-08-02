@@ -1,0 +1,33 @@
+KNOWLEDGE_BASE: '../data/birds/VisualKnowledgeBase_test.pickle'
+KNOWLEDGE_FEAT: 'path/to/image/features/resnet50/'
+
+CONFIG_NAME: 'KD_hard'
+
+DATASET_NAME: 'birds'
+DATA_DIR: '../data/birds'
+GPU_ID: 3
+WORKERS: 1
+
+B_VALIDATION: True  # True  # False
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '../models/bird_KD-GAN_hard.pth'
+    B_NET_D: False
+    BATCH_SIZE: 10
+    NET_E: '../DAMSMencoders/bird/text_encoder_glove.pth'
+
+
+GAN:
+    DF_DIM: 32
+    GF_DIM: 64
+    Z_DIM: 100
+    R_NUM: 2
+
+TEXT:
+    EMBEDDING_DIM: 300
+    CAPTIONS_PER_IMAGE: 10
+    WORDS_NUM: 25
