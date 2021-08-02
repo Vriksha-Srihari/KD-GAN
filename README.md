@@ -34,14 +34,6 @@
     - `cp val2014/* images`
 
 **Pretrained Models**
-- [DAMSM for bird](https://drive.google.com). Download and save it to `DAMSMencoders/`
-    - `python google_drive.py 1GNUKjVeyWYBJ8hEU-yrfYQpDOkxEyP3V DAMSMencoders/bird.zip`
-- [DAMSM for coco](https://drive.google.com). Download and save it to `DAMSMencoders/`
-    - `python google_drive.py 1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ DAMSMencoders/coco.zip`
-- [KD-GAN for bird](https://drive.google.com). Download and save it to `models`
-    - `python google_drive.py 1BmDKqIyNY_7XWhXpxa2gm6TYxB2DQHS3 models/bird_KDGAN_hard.pth`
-- [KD-GAN for coco](https://drive.google.com). Download and save it to `models`
-    - `python google_drive.py 1tQ9CJNiLlRLBKSUKHXKYms2tbfzllyO- models/coco_KDGAN_hard.pth`
 - [IS for bird](https://drive.google.com/file/d/0B3y_msrWZaXLMzNMNWhWdW0zVWs)
     - `python google_drive.py 0B3y_msrWZaXLMzNMNWhWdW0zVWs eval/IS/bird/inception_finetuned_models.zip`
 - [FID for bird](https://drive.google.com/file/d/1747il5vnY2zNkmQ1x_8hySx537ZAJEtj)
